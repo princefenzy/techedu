@@ -1,0 +1,20 @@
+body{
+    margin: 0px;;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: red ;
+    color: aliceblue;
+    padding: 1.5 rem;
+    position: fixed;
+    width: 1350px;
+}
+img{
+    width: 250px;
+}
+nav .links{
+  display: flex;
+  gap: 1rem ;
+}
