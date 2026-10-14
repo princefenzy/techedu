@@ -171,7 +171,7 @@ nav .join-btn{
     position: absolute;
     z-index: 5;
     top: 25px;
-    right: 20px;
+    right: -20px;
     width: 85px;
     padding: 12px;
     background: #55565b;
@@ -188,7 +188,7 @@ nav .join-btn{
     position: absolute;
     z-index: 5;
     bottom: 25px;
-    left: -20px;
+    left: 80px;
     width: 120px;
     padding: 12px;
     background: #55565b;
@@ -300,4 +300,511 @@ nav .join-btn{
     margin-top: 25px;
     color: #aaa;
     font-size: 8px;
+}
+.pricing {
+    padding: 45px 55px 75px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(255, 123, 0, 0.18),
+            transparent 45%
+        ),
+        #55565b;
+}
+
+
+.price-cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+
+    max-width: 700px;
+
+    margin: auto;
+}
+
+
+.price-card {
+    padding: 25px 20px;
+
+    background: #65666b;
+
+    min-height: 260px;
+}
+
+
+.price-card.active {
+    background:
+        linear-gradient(
+            150deg,
+            #ff653f,
+            #ff9d00
+        );
+
+    transform: translateY(-10px);
+}
+
+
+.plan-icon {
+    font-size: 12px;
+}
+
+
+.price-card h3 {
+    margin: 12px 0;
+
+    font-size: 10px;
+}
+
+
+.price-card h2 {
+    margin: 5px 0 20px;
+
+    font-size: 27px;
+}
+
+
+.price-card p {
+    margin: 9px 0;
+
+    color: #ddd;
+
+    font-size: 8px;
+}
+
+
+.price-card small {
+    display: block;
+
+    margin-top: 15px;
+
+    color: #aaa;
+
+    font-size: 7px;
+}
+
+
+.price-card.active small {
+    color: white;
+}
+
+
+.price-card button {
+    width: 100%;
+
+    margin-top: 18px;
+
+    padding: 9px;
+
+    border: none;
+
+    background: white;
+
+    color: #333;
+
+    font-size: 8px;
+}
+
+
+
+
+
+.testimonial {
+    padding: 50px 55px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.testimonial-text {
+    width: 55%;
+}
+
+
+.testimonial-text h2 {
+    margin: 12px 0 20px;
+
+    font-size: 25px;
+
+    font-style: italic;
+}
+
+
+.testimonial-text p {
+    width: 400px;
+
+    color: #ccc;
+
+    font-size: 9px;
+
+    line-height: 1.7;
+}
+
+
+.testimonial-text small {
+    color: #aaa;
+
+    font-size: 7px;
+}
+
+
+.arrows {
+    margin-top: 25px;
+
+    color: #ddd;
+
+    font-size: 15px;
+}
+
+
+.testimonial-image {
+    width: 25%;
+
+    padding: 8px;
+
+    background: #ff7b00;
+}
+
+
+.testimonial-image img {
+    display: block;
+
+    width: 100%;
+
+    height: 170px;
+
+    object-fit: contain;
+}
+
+
+
+
+.cta {
+    margin: 20px 55px 0;
+
+    padding: 30px 0;
+
+    border-top: 1px solid #ccc;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.cta-text span {
+    color: #ff7b00;
+
+    font-size: 9px;
+}
+
+
+.cta-text h2 {
+    margin: 5px 0 0;
+
+    font-size: 20px;
+
+    font-style: italic;
+}
+
+
+.email-box {
+    display: flex;
+
+    width: 310px;
+
+    padding: 5px;
+
+    background: #66676c;
+}
+
+
+.email-box input {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 8px;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 8px;
+}
+
+
+.email-box input::placeholder {
+    color: #aaa;
+}
+
+
+.email-box button {
+    border: none;
+
+    padding: 8px 14px;
+
+    background: #ff7b00;
+
+    color: white;
+
+    font-size: 8px;
+}
+
+
+
+
+footer {
+    padding: 15px 55px 25px;
+
+    text-align: center;
+}
+
+
+.socials {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #aaa;
+}
+
+
+.socials a {
+    color: white;
+
+    font-size: 15px;
+}
+
+
+.footer-logo {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 18px;
+}
+
+
+.footer-logo strong {
+    font-size: 20px;
+}
+
+
+.footer-logo span {
+    text-align: left;
+
+    font-size: 7px;
+
+    color: #ddd;
+}
+
+
+
+
+
+@media (max-width: 800px) {
+
+    nav {
+        padding: 0 20px;
+    }
+
+
+    nav .links {
+        display: none;
+    }
+
+
+    .hero {
+        padding: 40px 25px;
+
+        flex-direction: column;
+
+        gap: 40px;
+    }
+
+
+    .hero-text {
+        width: 100%;
+    }
+
+
+    .hero-image {
+        width: 100%;
+
+        max-width: 450px;
+    }
+
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+
+    .hero p {
+        width: 100%;
+    }
+
+
+    .programs {
+        padding: 45px 25px;
+    }
+
+
+    .section-title {
+        gap: 10px;
+    }
+
+
+    .section-title span {
+        font-size: 9px;
+    }
+
+
+    .section-title h2 {
+        font-size: 17px;
+    }
+
+
+    .program-cards {
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+
+    .why-us {
+        padding: 30px 25px;
+
+        flex-direction: column;
+    }
+
+
+    .workout-images,
+    .why-text {
+        width: 100%;
+    }
+
+
+    .price-cards {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .price-card.active {
+        transform: none;
+    }
+
+.testimonial {
+    padding: 50px 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.testimonial-text {
+    width: 55%;
+}
+.testimonial-image {
+    width: 310px;
+    max-width: 35%;
+    padding: 8px;
+    background: #ff7b00;
+    flex-shrink: 0;
+}
+
+.testimonial-image img {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    object-position: center;
+}
+
+    .cta {
+        margin: 20px 25px 0;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+
+    .email-box {
+        width: 100%;
+    }
+
+
+    footer {
+        padding: 15px 25px 25px;
+    }
+
+}
+
+
+
+@media (max-width: 500px) {
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+
+    .hero-stats {
+        gap: 20px;
+    }
+
+
+    .program-cards {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .program-card {
+        min-height: auto;
+    }
+
+
+    .section-title {
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+
+    .workout-images img:first-child {
+        height: 180px;
+    }
+
+
+    .workout-images img {
+        height: 87px;
+    }
+
 }
